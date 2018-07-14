@@ -1,3 +1,4 @@
+#json file deals with data
 import json
 from difflib import get_close_matches
 
