@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_13c3f0e85bde4591ade98b262a1306e0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_13c3f0e85bde4591ade98b262a1306e0" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_13c3f0e85bde4591ade98b262a1306e0 = L.map(
+                                  'map_13c3f0e85bde4591ade98b262a1306e0',
+                                  {center: [36,77],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_ab5356ac41cd4f6b9665893b63e40374 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_13c3f0e85bde4591ade98b262a1306e0);
+        
+    
+
+            var marker_10a3a7dbc4ad46dd9a3d1ee7cc01ee98 = L.marker(
+                [36,77],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_13c3f0e85bde4591ade98b262a1306e0);
+            
+    
+
+                var icon_618b13d6cfff433990544bc4d882dd9b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10a3a7dbc4ad46dd9a3d1ee7cc01ee98.setIcon(icon_618b13d6cfff433990544bc4d882dd9b);
+            
+    
+            var popup_344d4e71e380474d8af15af8bacf3cc6 = L.popup({maxWidth: '300'});
+
+            
+                var html_0deea80d7e7f4c57ae3855a349546a42 = $('<div id="html_0deea80d7e7f4c57ae3855a349546a42" style="width: 100.0%; height: 100.0%;">Hi there it's me!!</div>')[0];
+                popup_344d4e71e380474d8af15af8bacf3cc6.setContent(html_0deea80d7e7f4c57ae3855a349546a42);
+            
+
+            marker_10a3a7dbc4ad46dd9a3d1ee7cc01ee98.bindPopup(popup_344d4e71e380474d8af15af8bacf3cc6);
+
+            
+        
+</script>
