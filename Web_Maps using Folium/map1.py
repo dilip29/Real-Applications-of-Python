@@ -22,7 +22,8 @@ def colors(el):
 #for coordi in list:
 for lt,ln,el,nm in zip(lat,lon,elev,name):
     #fg.add_child(folium.CircleMarker(location=[lt,ln],radius=6,popup= str(el)+str(nm)+" m",fill_color=colors(el),color='grey',fill_opacity=0.7))
-    fgv.add_child(folium.Marker(location=[lt,ln],popup=str(el)+"m",icon=folium.Icon(color=colors(el))))
+    fgv.add_child(folium.Marker(location=[lt,ln],popup=str(el)+" m",icon=folium.Icon(color=colors(el))))
+    #print(nm)
 
 fgp.add_child(folium.GeoJson(data=open("world.json",'r',encoding='utf-8-sig').read(),
 style_function=lambda x: {'fillColor':'yellow'} if x['properties']['POP2005'] < 15000000
