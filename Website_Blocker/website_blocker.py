@@ -8,7 +8,7 @@ hosts_temp="hosts"
 while True:
     #if dt.now() > dt(2016,5,5,4)
     if  dt(dt.now().year,dt.now().month,dt.now().day,0) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,8):
-        with open(hosts_temp ,'r+') as file:
+        with open(hosts_path ,'r+') as file:
             data=file.read()
             for website in websites:
                 if website in data:
@@ -17,7 +17,7 @@ while True:
                     file.write(local_ip+" "+website+"\n")
                     #print("data written")
     else:
-        with open(hosts_temp,'r+') as file:
+        with open(hosts_path,'r+') as file:
             content=file.readlines()
             file.seek(0)
             for line in content:
