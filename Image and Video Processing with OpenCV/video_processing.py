@@ -1,8 +1,9 @@
 import cv2,time
 
 video=cv2.VideoCapture(0)
-
+a=0
 while True:
+    a=a+1
     check,frame=video.read()
 
     print(frame)
@@ -15,6 +16,6 @@ while True:
         break
 
 
-
+print(a)
 video.release()
 cv2.destroyAllWindows()
