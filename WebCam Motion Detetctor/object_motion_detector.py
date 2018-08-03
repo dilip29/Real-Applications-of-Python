@@ -35,6 +35,7 @@ while True:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),3)
 
     status_list.append(status)
+    status_list=status_list[-2:]
     if status_list[-1]==0 and status_list[-2]==1:
         times.append(datetime.now())
     if status_list[-1]==1 and status_list[-2]==0:
@@ -55,7 +56,7 @@ while True:
             times.append(datetime.now())
         break
 
-print(status_list)
+#print(status_list)
 print(times)
 
 for i in range(0,len(times),2):
