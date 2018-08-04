@@ -9,7 +9,8 @@ df["Start_string"]=df["Start"].dt.strftime("%Y-%m-%d %H:%M:%S")
 df["Exit_string"]=df["Exit"].dt.strftime("%Y-%m-%d %H:%M:%S")
 cf=ColumnDataSource(df)
 
-f=figure(height=300,width=1000,title="Object motion graph",x_axis_type='datetime')
+f=figure(height=300,width=1000,title="Object motion graph",
+x_axis_type='datetime',sizing_mode="scale_width")
 
 
 
